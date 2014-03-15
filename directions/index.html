@@ -1,0 +1,17 @@
+---
+layout: default
+title: All Directions
+published: true
+---
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+  
+      {% for direction in site.posts %}
+        <p><span style="font-size: 24px;"><a href="{{ direction.url }}"><strong>{{ direction.title }}</strong></a></span>
+        {% if direction.entity %}<br>For {{ direction.entity }}{% endif %}<br>
+        <span style="font-size: 16px;">{{ direction.time }}</span></h4></p>
+        <hr align="LEFT">
+      {% endfor %}
+
+  </section>
+</div>

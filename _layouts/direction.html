@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+    <p>
+    <style>td {border: none;} table {border: none;} img {padding: 0; margin: 0; border: none;}</style>
+        <table>
+            <tbody><tr>
+            {% if page.entity %}
+                <td><strong>For:</strong></td> <td>{{ page.entity }}</td></tr>
+            {% endif %}
+            <td><strong>Location:</strong></td> <td>{{ page.location }}</td></tr>
+            {% if page.nearest-stations %}
+                <td><strong>Nearest Stations:&nbsp;</strong></td>
+                <td>
+                {% for station in page.nearest-stations %}
+                    {{ station }}<br>
+                {% endfor %}
+                </td>
+            {% else %}
+                <td><strong>Nearest Station:</strong>&nbsp;</td>
+                <td>{{ page.nearest-station }}</td>
+            {% endif %}
+            </tr>
+        <td><strong>Service Changes:</strong></td> 
+        <td>
+        {% for change in page.changes-brief %}
+            {{ change }}<br>
+        {% endfor %}</td></tr>
+        </table> 
+        For more details on service changes, click the following link: {{ page.changes-ext }}</tr></tbody>
+    </p>
+    {{ content }}
+    
+    <p>If clarification on anything provided in these directions is necessary or contact with me is otherwise needed, use <a href="/contact">this contact form</a> or feel free to email me at <a href="mailto:terrellthemtaguy@stuykc.org">terrellthemtaguy@stuykc.org</a>.</p>
+    </section>
+</div>

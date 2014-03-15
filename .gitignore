@@ -1,0 +1,10 @@
+_site/
+
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+*.s[a-w][a-z]
+*~
+\#*\#
+.\#*

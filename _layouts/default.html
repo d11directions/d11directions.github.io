@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Terrell&#39;s Transit Directions : Transit directions for travel via public transportation in New York City." />
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+    <title>{% unless page.url =='/index.html' %} {{ page.title }} | {% endunless %} Terrell's Transit Directions</title>
+</head>
+
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+      <center>
+      <h1 id="project_title">{{ page.title }}</h1>
+      </center>
+      <!-- Temporary Navbar -->
+      <ul id="nav">
+        <li{% if page.url == '/index.html' %} class="active" {% endif %}><a href="/index.html">Home</a></li>
+        <li{% if page.url == '/directions/index.html' %} class="active" {% endif %}><a href="/directions">Directions</a></li>
+        <li{% if page.url == '/weekend_information/index.html' %} class="active" {% endif %}><a href="/weekend_information">Weekend Info</a></li>
+        <li{% if page.url == '/contact/index.html' %} class="active" {% endif %}> <a href="/contact">Contact</a></li>
+      </ul>
+    </header>
+</div>
+
+<body>
+{{ content }}
+
+{% include footer.html %}
+
+<!-- Google Analytics code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-48608533-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+
+</html>
