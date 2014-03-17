@@ -8,7 +8,7 @@ published: true
   
       {% for direction in site.posts %}
         <p><span style="font-size: 24px;"><a href="{{ direction.url }}"><strong>{{ direction.title }}</strong></a></span><br>
-        <span style="font-size: 16px;">{{ direction.time }}<br>
+        <span style="font-size: 16px;">{% if direction.for %}For {{ direction.for }}<br>{% endif %}{{ direction.time }}<br>
         {{ direction.location }}</span></p>
         <hr align="LEFT">
       {% endfor %}
