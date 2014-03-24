@@ -27,7 +27,7 @@ layout: default
             {{ change }}<br>
         {% endfor %}</td></tr>
         </table> 
-        For more details on service changes, click the following link: {{ page.changes-ext }}</tr></tbody>
+        For more details on service changes, click the following link: {% if page.changes-ext %}{{ page.changes-ext }}{% endif %}{% if page.changes-link %}http://travel.mtanyct.info/serviceadvisory/routeStatusResult.aspx?tag=ALL&date={{ page.changes-link }}&time=&method=getstatus4{% endif %}</tr></tbody>
     </p>
     {{ content }}
     
