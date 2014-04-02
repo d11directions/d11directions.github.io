@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Division 11 Transit Directions : Transit directions for New York Division 11 Key Clubbers." />
     <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
-    <title>{% unless page.url =='/index.html' %} {{ page.title }} | {% endunless %} Division 11 Transit Directions</title>
+    <title>{% unless page.url =='/index.html' %}{{ page.title }} | {% endunless %}Division 11 Transit Directions</title>
 </head>
 
 <!-- HEADER -->
@@ -26,6 +26,7 @@
         <li{% if page.url == '/contact/index.html' %} class="active"{% endif %}> <a href="/contact">Contact</a></li>
         <li{% if page.url == '/about/index.html' %} class="active"{% endif %}> <a href="/about">About</a></li>
       </ul>
+      <h4 id="project_tagline">{% include update.html %}</h4>
     </header>
 </div>
 
