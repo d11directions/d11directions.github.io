@@ -13,7 +13,7 @@
 <div id="header_wrap" class="outer">
     <header class="inner">
       <center>
-      <h1 id="project_title">{{ page.title }}
+      <h1 id="project_title">{{ page.title }}</h1>
       </center>
       <!-- Temporary Navbar -->
       <ul id="nav">
@@ -26,7 +26,8 @@
         <li{% if page.url == '/contact/index.html' %} class="active"{% endif %}> <a href="/contact">Contact</a></li>
         <li{% if page.url == '/about/index.html' %} class="active"{% endif %}> <a href="/about">About</a></li>
       </ul>
-      <h1 id="project_title"><span style="font-size: 20px;"><strong>Update:</strong> {% include update.html %}</span></h1>
+      <style> #update {color: #fff; font-size: 20px; }</style>
+      <id="update"><strong>Update:</strong> {% include update.html %}</span></id>
     </header>
 </div>
 
