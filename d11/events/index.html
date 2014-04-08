@@ -1,0 +1,19 @@
+---
+layout: default
+title: Divisional events
+---
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+  
+  <hr align="LEFT">
+  {% for tag in site.tags.d11 %}
+  <p>
+    <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
+    <span style="font-size: 16px;">{{ tag.time }}<br>
+    {{ tag.location }}</span><br>
+    <hr align="LEFT">
+  </p>
+  {% endfor %}
+  
+  </section>
+</div>
