@@ -16,6 +16,8 @@ title: Divisional events
     {{ tag.location }}</span><br>
     <hr align="LEFT">
   </p>
+  {% else %}
+  <h3>Sorry, there are no upcoming {{ page.title }} with posted directions.</h3>
   {% endfor %}
   {% endif %}
   <h3><a href="/d11/events/">All Divisional events</a>
