@@ -2,11 +2,14 @@
 layout: default
 title: Stuyvesant Key Club events
 ---
+
+{% assign lim = 1 %}
 <div id="main_content_wrap" class="outer">
   <section id="main_content" class="inner">
-  
+  {% if lim > 0 %}
+  <h2>Directions to Upcoming Events:</h2>
   <hr align="LEFT">
-  {% for tag in site.tags.stuy %}
+  {% for tag in site.tags.stuy limit: lim %}
   <p>
     <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
     <span style="font-size: 16px;">{{ tag.time }}<br>
@@ -14,6 +17,7 @@ title: Stuyvesant Key Club events
     <hr align="LEFT">
   </p>
   {% endfor %}
-  
+  {% endif %}
+  <h3><a href="/bxsci/events/">All Stuyvesant Key Club events</a>
   </section>
 </div>
