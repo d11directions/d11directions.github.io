@@ -16,8 +16,10 @@ title: Stuyvesant Key Club events
     {{ tag.location }}</span><br>
     <hr align="LEFT">
   </p>
+  {% else %}
+  <h3>Sorry, there are no upcoming {{ page.title }} with posted directions.</h3>
   {% endfor %}
   {% endif %}
-  <h3><a href="/bxsci/events/">All Stuyvesant Key Club events</a>
+  <h3><a href="/stuy/events/">All Stuyvesant Key Club events</a>
   </section>
 </div>
