@@ -8,7 +8,6 @@ title: Bronx Science Key Club events
   <section id="main_content" class="inner">
   {% if lim > 0 %}
   <h2>Directions to Upcoming Events:</h2>
-  <hr align="LEFT">
   {% for tag in site.tags.bxsci limit: lim %}
   <p>
     <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
@@ -16,6 +15,8 @@ title: Bronx Science Key Club events
     {{ tag.location }}</span><br>
     <hr align="LEFT">
   </p>
+  {% else %}
+  <h3>Sorry, there are no upcoming {{ page.title }} with posted directions.</h3>
   {% endfor %}
   {% endif %}
   <h3><a href="/bxsci/events/">All Bronx Science Key Club events</a>
