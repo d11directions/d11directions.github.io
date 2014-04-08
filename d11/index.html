@@ -8,7 +8,6 @@ title: Divisional events
   <section id="main_content" class="inner">
   {% if lim > 0 %}
   <h2>Directions to Upcoming Events:</h2>
-  <hr align="LEFT">
   {% for tag in site.tags.d11 limit: lim %}
   <p>
     <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
@@ -16,9 +15,9 @@ title: Divisional events
     {{ tag.location }}</span><br>
     <hr align="LEFT">
   </p>
+  {% endfor %}  
   {% else %}
   <h3>Sorry, there are no upcoming {{ page.title }} with posted directions.</h3>
-  {% endfor %}
   {% endif %}
   <h3><a href="/d11/events/">All Divisional events</a>
   </section>
