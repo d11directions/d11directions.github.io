@@ -8,7 +8,7 @@ title: Bronx Science Key Club events
   <section id="main_content" class="inner">
   {% if lim > 0 %}
   <h2>Directions to Upcoming Events:</h2>
-  {% for tag in site.tags.bxsci limit: lim %}
+  {% for tag in site.tags.bxsci reversed limit: lim %}
   <p>
     <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
     <span style="font-size: 16px;">{{ tag.time }}<br>
