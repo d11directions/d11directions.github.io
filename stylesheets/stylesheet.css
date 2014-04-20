@@ -268,7 +268,7 @@ Added Definitions
 *******************************************************************************/
 .leftimage {
   float: left;
-  margin: 0 -2px;
+  margin: 5 -2px;
   padding 5px;
   border 0px;
 }
