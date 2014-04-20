@@ -6,30 +6,36 @@ layout: default
     <p>
     <style>td {border: none;} table {border: none;} img {padding: 0; margin: 0; border: none;}</style>
         <table>
-            <tbody><tr>
-            <td><strong>Date:</strong></td> <td>{{ page.time }}</td></tr>
-            <td><strong>Location:</strong></td> <td>{{ page.location }}</td></tr>
+            <tbody>
+            <tr>
+                <td><strong>Date:</strong></td>
+                <td>{{ page.time }}</td>
+            </tr>
+            <tr>
+                <td><strong>Location:</strong></td>
+                <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}</td>
+            </tr>
+            <tr>    
             {% if page.nearest-stations %}
                 <td><strong>Nearest Stations:&nbsp;</strong></td>
-                <td>
-                {% for station in page.nearest-stations %}
-                    {{ station }}<br>
-                {% endfor %}
-                </td>
+                <td>{% for station in page.nearest-stations %}{{ station }}<br>{% endfor %}</td>
             {% else %}
                 <td><strong>Nearest Station:</strong>&nbsp;</td>
                 <td>{{ page.nearest-station }}</td>
             {% endif %}
             </tr>
-        <td><strong>Service Changes:</strong></td> 
-        <td>
-        {% for change in page.changes-brief %}
-            {{ change }}<br>
-        {% endfor %}</td></tr>
+            <tr>
+                <td><strong>Service Changes:</strong></td> 
+                <td>{% for change in page.changes-brief %}{{ change }}<br>{% endfor %}</td>
+            </tr>
+            </tbody>
         </table> 
         For more details on service changes, click the following link: {% if page.changes-ext %}{{ page.changes-ext }}{% endif %}{% if page.changes-link %}<a href="http://travel.mtanyct.info/serviceadvisory/routeStatusResult.aspx?tag=ALL&date={{ page.changes-link }}&time=&method=getstatus4">{% endif %}</a></tr></tbody>
     </p>
     <div align="center">
+    {% if page.gmap %}
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ page.gmap }}&amp;output=embed"></iframe>
+    {% endif %}
     {{ content }}
     </div>
     <p>If clarification on anything provided in these directions is necessary or contact with me is otherwise needed, use <a href="/contact">this contact form</a> or feel free to email me at <a href="mailto:terrellthemtaguy@stuykc.org">terrellthemtaguy@stuykc.org</a>.</p>
