@@ -14,7 +14,7 @@ layout: default
             <tr>
                 <td><strong>Location:</strong></td>
                 {% if page.location %}
-                <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}</td>
+                <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}<br>{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}</td>
                 {% endif %}
                 {% if page.locations %}
                 <td>{% for loc in page.locations %}{{ loc }}<br>{% endfor %}{% if page.gmap %}<a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}</td>
