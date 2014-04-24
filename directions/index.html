@@ -10,7 +10,7 @@ published: true
       {% for direction in site.posts %}
         <p><span style="font-size: 20px;"><a href="{{ direction.url }}"><strong>{{ direction.title }}</strong></a></span><br>
         <span style="font-size: 16px;">{% if direction.for %}For {{ direction.for }}<br>{% endif %}
-        {% if direction.time %}{{ direction.time }}{% endif %}{% if direction.times %}{% for time in direction.times %}{{ time }}<br>{% endfor %}{% endif %}
+        {% if direction.time %}{{ direction.time }}<br>{% endif %}{% if direction.times %}{% for time in direction.times %}{{ time }}<br>{% endfor %}{% endif %}
         {{ direction.location }}</span></p>
         <hr align="LEFT">
       {% endfor %}
