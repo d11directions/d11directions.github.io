@@ -44,15 +44,13 @@ layout: default
         {% if page.changes-ext %} For more details on service changes, click the following link: <a href="{{ page.changes-ext }}">[link]</a>{% endif %}
         {% if page.changes-custom %}{{ page.changes-custom }}{% endif %}
     <div align="center">
-    {% if page.gmap %}
-    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ page.gmap }}&amp;output=embed"></iframe>
-    {% endif %}
+    
+    {% if page.gmap %}<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ page.gmap }}&amp;output=embed"></iframe>{% endif %}
     {% if page.location %}
         {% if page.gmaps %}
-            {% for gmap in page.gmaps limit 1 %}
-            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ gmap.link }}&amp;output=embed"></iframe>
-            {% endfor %}
+            {% for gmap in page.gmaps limit 1 %}<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ gmap.link }}&amp;output=embed"></iframe>{% endfor %}
         {% endif %}
+    {% endif %}
     {% if page.locations %}
         {% for gmap in page.gmaps %}
         <iframe width="375" height="308" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ gmap.link }}&amp;output=embed"></iframe>
