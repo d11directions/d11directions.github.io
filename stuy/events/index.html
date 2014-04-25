@@ -9,7 +9,7 @@ title: Stuyvesant Key Club events
   {% for tag in site.tags.stuy %}
   <p>
     <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
-    <span style="font-size: 16px;">{{ tag.time }}<br>
+    <span style="font-size: 16px;">{% if tag.time %}{{ tag.time }}<br>{% endif %}{% if tag.times %}{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
     {{ tag.location }}</span><br>
     <hr align="LEFT">
   </p>
