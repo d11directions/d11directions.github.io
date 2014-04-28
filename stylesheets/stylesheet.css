@@ -317,7 +317,7 @@ Added ID styles
 #funfact{
     border: 1px solid #ccc;
     border-width: 1px 0;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: inline-block;
 }
