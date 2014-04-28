@@ -315,13 +315,16 @@ Added ID styles
 }
 
 #funfact{
-    color: #fff;
-    text-align: center;
     border: 1px solid #ccc;
     border-width: 1px 0;
     margin: 0;
     padding: 0;
     display: inline-block;
+}
+
+#funfact p{
+    color: #fff;
+    text-align: center;  
 }
 /*******************************************************************************
 Full-Width Styles
