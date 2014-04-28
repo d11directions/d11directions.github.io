@@ -321,7 +321,7 @@ Added ID styles
     margin: 0;
     padding: 0;
     text-align: center;
-    display: inline;
+    display: inline-block;
 }
 /*******************************************************************************
 Full-Width Styles
