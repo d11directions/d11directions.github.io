@@ -9,29 +9,31 @@ layout: default
             <tbody>
             <tr>
                 {% if page.time %}
-                <td><strong>Date:</strong></td>
+                <td><strong>Date &amp; Time:</strong></td>
                 <td>{{ page.time }}</td>
                 {% endif %}
                 {% if page.times %}
-                <td><strong>Date:</strong></td>
+                <td><strong>Date &amp; Times:</strong></td>
                 <td>{% for time in page.times %}{{ time }}<br>{% endfor %}</td>
                 {% endif %}
             </tr>
             <tr>
-                <td><strong>Location:</strong></td>
                 {% if page.location %}
+                <td><strong>Location:</strong></td>
                 <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}<br>{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}</td>
                 {% endif %}
                 {% if page.locations %}
+                <td><strong>Locations:</strong></td>
                 <td>{% for loc in page.locations %}{{ loc }}<br>{% endfor %}{% if page.gmap %}<a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}</td>
                 {% endif %}
             </tr>
             <tr>    
             {% if page.nearest-stations %}
-                <td><strong>Nearest Stations:&nbsp;</strong></td>
+                <td><strong>Nearest Stations:</strong></td>
                 <td>{% for station in page.nearest-stations %}{{ station }}<br>{% endfor %}</td>
-            {% else %}
-                <td><strong>Nearest Station:</strong>&nbsp;</td>
+            {% endif %}
+            {% if page.nearest-station %}
+                <td><strong>Nearest Station:</strong></td>
                 <td>{{ page.nearest-station }}</td>
             {% endif %}
             </tr>
