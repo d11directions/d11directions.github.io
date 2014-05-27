@@ -310,30 +310,30 @@ Added ID styles
 }
 
 /* Added styles for dropdown on hover */
-#nav li ul {
+#nav li ul{
 	display: none; 
 	width: 10em; /* Width to help Opera out */
 	background-color: #000;}
 
-#nav li:hover ul {
+#nav li:hover ul{
 	display: block;
 	position: absolute;
 	margin: 0;
 	padding: 0; 
 }
 	
-#nav li:hover li {
+#nav li:hover li{
 	float: none;
 }
 	
-#nav li:hover li a {
+#nav li:hover li a{
 	background-color: #000;
-	border-bottom: 1px solid #fff;
-	color: #000;
+	border-bottom: 1px solid #000;
+	color: #fff;
 }
 	
-#nav li li a:hover {
-	background-color: #8db3ff;
+#nav li li a:hover{
+	background-color: #000;
 }
 
 #funfact{
