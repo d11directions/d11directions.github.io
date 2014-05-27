@@ -309,6 +309,28 @@ Added ID styles
     color: #fff;
 }
 
+/* Added styles for dropdown on hover */
+#nav li:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0; 
+}
+	
+#nav li:hover li {
+	float: none;
+}
+	
+#nav li:hover li a {
+	background-color: #000;
+	border-bottom: 1px solid #fff;
+	color: #000;
+}
+	
+#nav li li a:hover {
+	background-color: #8db3ff;
+}
+
 #funfact{
     border: 1px solid #ccc;
     border-width: 1px 0;
