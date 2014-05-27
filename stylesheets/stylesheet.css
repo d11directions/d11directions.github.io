@@ -310,6 +310,11 @@ Added ID styles
 }
 
 /* Added styles for dropdown on hover */
+#nav li ul {
+	display: none; 
+	width: 10em; /* Width to help Opera out */
+	background-color: #000;}
+
 #nav li:hover ul {
 	display: block;
 	position: absolute;
