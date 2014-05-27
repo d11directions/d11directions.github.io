@@ -309,7 +309,7 @@ Added ID styles
     color: #fff;
 }
 
-/* Work on this code later --> Added styles for dropdown on hover */
+/* Work on this code later --> Added styles for dropdown on hover
 #nav li ul{
 	display: none; 
 	height: auto;
@@ -334,8 +334,7 @@ Added ID styles
 	
 #nav li li a:hover{
 	background-color: #000;
-}
-*/
+} */
 
 #funfact{
     border: 1px solid #ccc;
