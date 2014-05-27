@@ -279,6 +279,7 @@ Added ID styles
     margin: 0;
     padding: 0;
     text-align: center;
+    height: 1em; /* will figure out why */
 }
 
 #nav li{
@@ -312,7 +313,7 @@ Added ID styles
 /* Added styles for dropdown on hover */
 #nav li ul{
 	display: none; 
-	/* width: 5em; /* Width to help Opera out */
+	width: 5em; /* Width to help Opera out */
 	background-color: #000;}
 
 #nav li:hover ul{
