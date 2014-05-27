@@ -1,0 +1,25 @@
+---
+layout: default
+title: HSMSE Key Club events
+---
+
+{% assign lim = 0 %}
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+  {% if lim > 0 %}
+  <h2>Directions to Upcoming Events:</h2>
+  {% for tag in site.tags.hsmse reversed limit: lim %}
+  <p>
+    <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
+    {% if tag.time %}{{ tag.time }}<br>{% endif %}{% if tag.times %}{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
+    {% if tag.location %}{{ tag.location }}{% endif %}{% if tag.locations %}{% for location in tag.locations %}{{ location }}<br>{% endfor %}{% endif %}
+    </span>
+    <hr align="LEFT">
+  </p>
+  {% endfor %}
+  {% else %}
+  <h3>Sorry, there are no upcoming {{ page.title }} with posted directions.</h3>
+  {% endif %}
+  <h3><a href="/hsmse/events/">All HSMSE Key Club events</a>
+  </section>
+</div>
