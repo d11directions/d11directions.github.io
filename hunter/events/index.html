@@ -1,0 +1,21 @@
+---
+layout: default
+title: HCHS Key Club events
+---
+
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+  
+  <hr align="LEFT">
+  {% for tag in site.tags.hunter %}
+  <p>
+    <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
+    <span style="font-size: 16px;">{% if tag.time %}{{ tag.time }}<br>{% endif %}{% if tag.times %}{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
+    {% if tag.location %}{{ tag.location }}{% endif %}{% if tag.locations %}{% for location in tag.locations %}{{ location }}<br>{% endfor %}{% endif %}
+    </span>
+    <hr align="LEFT">
+  </p>
+  {% endfor %}
+  
+  </section>
+</div>
