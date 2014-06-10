@@ -3,7 +3,7 @@ layout: default
 title: Bronx Science Key Club events
 ---
 
-{% assign lim = 1 %}
+{% assign lim = 0 %}
 <div id="main_content_wrap" class="outer">
   <section id="main_content" class="inner">
   {% if lim > 0 %}
@@ -18,8 +18,7 @@ title: Bronx Science Key Club events
   </p>
   {% endfor %}
   {% else %}
-  <h3>Sorry, there are no upcoming {{ page.title }} with posted directions.</h3><br>
-  Check the <a href="http://bxscikeyclub.weebly.com/">official website</a> for possible upcoming events.
+  <h3>Sorry, there are no upcoming {{ page.title }} with posted directions. Check the <a href="http://bxscikeyclub.weebly.com/">official website</a> for possible upcoming events.</h3>
   {% endif %}
   <h3><a href="/bxsci/events/">All Bronx Science Key Club events</a>
   </section>
