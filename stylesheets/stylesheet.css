@@ -291,8 +291,8 @@ Added ID styles
 #nav a{
     display: block;
     padding: 10px;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
 }
 
 #nav li a:link{
