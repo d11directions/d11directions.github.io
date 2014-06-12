@@ -273,15 +273,21 @@ Added Definitions
 Added ID styles
 *******************************************************************************/
 
-#nav ul {
+nav ul ul {
   display: none;
 }
 
-#nav li:hover > ul {
+nav ul li:hover > ul {
   display: block;
 }
 
-#nav {
+nav ul {
+  background: #efefef; 
+  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+  background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+  /* above used from tutorial */
   padding: 0 20px;
   border-radius: 10px;
   list-style: none;
@@ -289,32 +295,32 @@ Added ID styles
   display: inline-table;
 }
 
-#nav:after {
+nav ul:after {
   content: "";
   clear: both;
   display: block;
 }
 
-#nav li {
+nav ul li {
   float: left;
 }
 
-#nav li:hover {
+nav ul li:hover {
   background: #efefef;
 }
 
-#nav li:hover a {
+nav ul li:hover a {
   color: #000000;
 }
 
-#nav li a {
+nav ul li a {
   display: block;
   padding: 10px;
   color: #fff;
   text-decoration: none;
 }
 
-#nav ul {
+nav ul ul {
   background: #efefef;
   border-radius: 0px;
   padding: 0;
@@ -322,18 +328,18 @@ Added ID styles
   top: 100%;
 }
 
-#nav ul li {
+#nav ul ul li {
   float: none;
   border-top: 1px solid #6b727c;
   border-bottom: 1px solid #575f6a;
   position: relative;
 }
 
-#nav ul li a {
+#nav ul ul li a {
   color: #fff;
 }
 
-#nav ul li a:hover {
+#nav ul ul li a:hover {
   color: #777777;
 }
 /* Old Navbar Styles (Pre-dropdown)
