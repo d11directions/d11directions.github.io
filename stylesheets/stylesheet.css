@@ -272,6 +272,71 @@ Added Definitions
 /*******************************************************************************
 Added ID styles
 *******************************************************************************/
+
+#nav ul {
+  display: none;
+}
+
+#nav li:hover > ul {
+  display: block;
+}
+
+#nav {
+  padding: 0 20px;
+  border-radius: 10px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
+#nav:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav li:hover {
+  background: #efefef;
+}
+
+#nav li:hover a {
+  color: #000000;
+}
+
+#nav li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav ul {
+  background: #efefef;
+  border-radius: 0px;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+}
+
+#nav ul li {
+  float: none;
+  border-top: 1px solid #6b727c;
+  border-bottom: 1px solid #575f6a;
+  position: relative;
+}
+
+#nav ul li a {
+  color: #fff;
+}
+
+#nav ul li a:hover {
+  color: #777777;
+}
+/* Old Navbar Styles (Pre-dropdown)
 #nav{
     border: 1px solid #ccc;
     border-width: 1px 0;
@@ -350,6 +415,7 @@ Added ID styles
 #nav li li a:hover{
 	background-color: #000;
 } */
+/* End old styles */
 
 #funfact{
     border: 1px solid #ccc;
