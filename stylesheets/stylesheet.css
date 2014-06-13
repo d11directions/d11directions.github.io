@@ -390,8 +390,8 @@ nav ul li ul{
     padding: 0;
 }
 
-nav ul li:hover a{
-    font-weight: bold;
+nav ul li a:hover{
+    background: #d3d3d3;
 }
 
 nav ul li:hover ul{
