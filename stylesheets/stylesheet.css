@@ -340,7 +340,8 @@ nav ul ul {
   color: #777777;
 }
 */
-Old Navbar Styles (Pre-dropdown)
+
+/* Old Navbar Styles (Pre-dropdown) */
 nav ul {
     border: 1px solid #ccc;
     border-width: 1px 0;
@@ -387,6 +388,10 @@ nav ul li ul{
     height: auto;
     margin: 0;
     padding: 0;
+}
+
+nav ul li:hover a{
+    font-weight: bold;
 }
 
 nav ul li:hover ul{
