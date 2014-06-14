@@ -342,6 +342,10 @@ nav ul ul {
 */
 
 /* Old Navbar Styles (Pre-dropdown) */
+nav {
+    width: 100%;
+}
+
 nav ul {
     border: 1px solid #ccc;
     border-width: 1px 0;
