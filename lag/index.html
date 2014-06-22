@@ -9,10 +9,9 @@ title: LaGuardia Key Club events
   {% if lim > 0 %}
   <h2>Directions to Upcoming Events:</h2>
   {% for tag in site.tags.lag reversed limit: lim %}
-  <p>
-    <span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
-    {% if tag.time %}{{ tag.time }}<br>{% endif %}{% if tag.times %}{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
-    {% if tag.location %}{{ tag.location }}{% endif %}{% if tag.locations %}{% for location in tag.locations %}{{ location }}<br>{% endfor %}{% endif %}
+  <p><span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
+    {% if tag.time %}<strong>Date: </strong>{{ tag.time }}<br>{% endif %}{% if tag.times %}<strong> Dates: </strong>{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
+    {% if tag.location %}<strong> Location: </strong>{{ tag.location }}{% endif %}{% if tag.locations %}<strong>Locations: </strong>{% for location in tag.locations %}{{ location }}<br>{% endfor %}{% endif %}
     </span>
     <hr align="LEFT">
   </p>
