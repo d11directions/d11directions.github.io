@@ -2,9 +2,6 @@
 layout: default
 title: LaGuardia Key Club events
 ---
-<div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
-  
   <hr align="LEFT">
   {% for tag in site.tags.lag %}
   <p><span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
@@ -14,6 +11,3 @@ title: LaGuardia Key Club events
     <hr align="LEFT">
   </p>
   {% endfor %}
-  
-  </section>
-</div>

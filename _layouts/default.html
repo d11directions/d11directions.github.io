@@ -9,7 +9,6 @@
     <title>{% unless page.url =='/index.html' %}{{ page.title }} | {% endunless %}Division 11 Transit Directions</title>
 </head>
 
-<!-- HEADER -->
 <div id="header_wrap" class="outer">
     <header class="inner">
       <center>
@@ -34,14 +33,15 @@
         <li{% if page.url == '/contact/index.html' %} class="active"{% endif %}><a href="/contact">Contact</a></li>
       </ul>
       </nav>
-      
-      <br>
-      {% include funfact.html %}
     </header>
 </div>
 
 <body>
-{{ content }}
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+    {{ content }}
+  </section>
+</div>
 
 {% include footer.html %}
 

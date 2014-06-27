@@ -2,10 +2,7 @@
 layout: default
 title: HSMSE Key Club events
 ---
-
 {% assign lim = 0 %}
-<div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
   {% if lim > 0 %}
   <h2>Directions to Upcoming Events:</h2>
   {% for tag in site.tags.hsmse reversed limit: lim %}
@@ -20,5 +17,3 @@ title: HSMSE Key Club events
   <h3>Sorry, there are no upcoming {{ page.title }} with posted directions. Check the <a href="https://www.facebook.com/groups/147351615312920">official Facebook group</a> for possible upcoming events.</h3>
   {% endif %}
   <h3><a href="/hsmse/events/">All HSMSE Key Club events</a>
-  </section>
-</div>

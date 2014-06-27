@@ -3,9 +3,6 @@ layout: default
 title: All Directions
 published: true
 ---
-<div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
-  
       <hr align="LEFT">
       {% for direction in site.posts %}
         <p><span style="font-size: 20px;"><a href="{{ direction.url }}"><strong>{{ direction.title }}</strong></a></span><br>
@@ -15,6 +12,3 @@ published: true
     </span></p>
         <hr align="LEFT">
       {% endfor %}
-
-  </section>
-</div>

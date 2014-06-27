@@ -2,11 +2,8 @@
 layout: default
 title: Divisional events
 ---
-
 {% assign lim = 1 %}
-<div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
-  {% if lim > 0 %}
+{% if lim > 0 %}
   <h2>Directions to Upcoming Events:</h2>
   {% for tag in site.tags.d11 reversed limit: lim %}
   <p><span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
@@ -20,5 +17,3 @@ title: Divisional events
   <h3>Sorry, there are no upcoming {{ page.title }} with posted directions. Check the <a href="http://nydkc11.org/">official website</a> for possible upcoming events.</h3>
   {% endif %}
   <h3><a href="/d11/events/">All Divisional events</a>
-  </section>
-</div>

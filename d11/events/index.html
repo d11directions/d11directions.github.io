@@ -2,10 +2,7 @@
 layout: default
 title: Divisional events
 ---
-<div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
-  
-  <hr align="LEFT">
+<hr align="LEFT">
   {% for tag in site.tags.d11 %}
   <p><span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
     {% if tag.time %}<strong>Date: </strong>{{ tag.time }}<br>{% endif %}{% if tag.times %}<strong> Dates: </strong>{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
@@ -14,6 +11,3 @@ title: Divisional events
     <hr align="LEFT">
   </p>
   {% endfor %}
-  
-  </section>
-</div>
