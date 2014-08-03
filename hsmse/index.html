@@ -2,7 +2,7 @@
 layout: default
 title: HSMSE Key Club events
 ---
-{% assign lim = 0 %}
+{% assign lim = site.data.upcoming_events.hsmse %}
   {% if lim > 0 %}
   <h2>Directions to Upcoming Events:</h2>
   {% for tag in site.tags.hsmse reversed limit: lim %}
