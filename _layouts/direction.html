@@ -7,11 +7,11 @@ layout: default
             <tbody>
             <tr>
                 {% if page.time %}
-                <td><strong>Date &amp; Time:</strong></td>
+                <td><strong>Date:</strong></td>
                 <td>{{ page.time }}</td>
                 {% endif %}
                 {% if page.times %}
-                <td><strong>Date &amp; Times:</strong></td>
+                <td><strong>Dates:</strong></td>
                 <td>{% for time in page.times %}{{ time }}<br>{% endfor %}</td>
                 {% endif %}
             </tr>
