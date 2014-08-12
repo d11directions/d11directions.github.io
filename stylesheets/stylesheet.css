@@ -549,6 +549,8 @@ Full-Width Styles
   padding-top: 20px;
 }
 
+#main_content img { padding: 0; margin: 0; border: none; width: auto; max-width: 100%; }
+
 #footer_wrap {
   /** background: #212121; */
   background-image: -ms-linear-gradient(top, #000000 0%, #FFFFFF 150%);
