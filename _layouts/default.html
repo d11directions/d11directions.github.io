@@ -8,7 +8,7 @@
   <meta name="description" content="Transit directions to service events for clubs within Division 11 of the New York District of Key Club International." />
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-  <title>Website Test</title>
+  <title>Division 11 Transit Directions</title>
 </head>
 
 <body>
@@ -21,18 +21,18 @@
 <div id="nav_wrap">
     <div id="nav">
     <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="clubindex.html">Clubs</a></li>
-        <li><a href="weekendinfo.html">Weekend Info</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">D11</a></li>
-        <li><a href="#">BxSci</a></li>
-        <li><a href="#">HSMSE</a></li>
-        <li><a href="#">Hunter</a></li>
-        <li><a href="#">LaGuardia</a></li>
-        <li><a href="#">NEST+m</a></li>
-        <li><a href="#">Stuy</a></li>   
+        <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="/index.html">Home</a></li>
+        <li{% if page.url == '/directions/index.html' %} class="active"{% endif %}><a href="/directions">Directions</a></li>
+        <li{% if page.url == '/d11/index.html' %} class="active"{% endif %}><a href="/d11">D11</a></li>
+        <li{% if page.url == '/bxsci/index.html' %} class="active"{% endif %}><a href="/bxsci">BxSci</a></li>
+        <li{% if page.url == '/hsmse/index.html' %} class="active"{% endif %}><a href="/hsmse">HSMSE</a></li>
+        <li{% if page.url == '/hunter/index.html' %} class="active"{% endif %}><a href="/hunter">Hunter</a></li>
+        <li{% if page.url == '/lag/index.html' %} class="active"{% endif %}><a href="/lag">LaGuardia</a></li>
+        <li{% if page.url == '/nestm/index.html' %} class="active"{% endif %}><a href="/nestm">NEST+m</a></li>
+        <li{% if page.url == '/stuy/index.html' %} class="active"{% endif %}><a href="/stuy">Stuy</a></li>
+        <li{% if page.url == '/weekend_info/index.html' %} class="active"{% endif %}><a href="/weekend_info">Weekend Info</a></li>
+        <li{% if page.url == '/about/index.html' %} class="active"{% endif %}><a href="/about">About</a></li>
+        <li{% if page.url == '/contact/index.html' %} class="active"{% endif %}><a href="/contact">Contact</a></li>
     </ul>
   </div>
 </div>
