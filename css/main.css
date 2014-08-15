@@ -1,0 +1,65 @@
+/* MeyerWeb Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Website Styles */
+@font-face { font-family: "Myriad Pro"; font-weight: 400; src: url(../fonts/myriad-pro.otf) format("opentype"); }
+@font-face { font-family: "Myriad Pro"; font-weight: 700; src: url(../fonts/myriad-pro-bold.otf) format("opentype"); }
+@font-face { font-family: "Century Gothic"; src: url(../fonts/century-gothic.ttf) format("truetype"); }
+
+a { text-decoration: none; color: #00aeef; }
+a:hover, a:focus { text-decoration: underline; }
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+.outer { width: 100%; }
+.inner { position: relative; padding: 20px 10px; margin: 0 auto; }
+
+body { font-family: 'Myriad Pro', Verdana, Arial, sans-serif; font-size: 16px; color: #231f20; background: #ffffff; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Century Gothic', Verdana, Arial, sans-serif; font-weight: 700; color: #231f20; padding: 5px 0; }
+h1 { font-size: 36px; line-height: 54px; }
+h2 { font-size: 30px; line-height: 45px; }
+h3 { font-size: 24px; line-height: 36px; }
+h4 { font-size: 20px; line-height: 30px; }
+h5 { font-size: 18px; line-height: 27px; }
+h6 { font-size: 16px; line-height: 24px; }
+
+#header_wrap { background: #ffffff; }
+header { font-family: 'Century Gothic', Verdana, Arial, sans-serif; text-align: center; font-size: 48px; font-weight: 700; }
+
+#nav_wrap { background: #00aeef; width: 100%; }
+#nav { display: table; margin: auto; }
+#nav ul { list-style: none; float: left; font-size: 24px; }
+#nav ul a { display: block; padding: 5px 10px; color: #ffffff; text-decoration: none; }
+#nav ul li { float: left; display: inline; height: auto; text-align: center; }
+#nav ul li a:link { text-decoration: none; color: #ffffff; }
+#nav ul li a:hover { background: #00aeef; }
+#nav ul li.active a { color: #231f20; background: #ffffff; }
+#nav ul li.active a:hover { background: #ffffff; }
+
+#main_content_wrap { background: #ffffff; }
+#main_content { max-width: 800px; padding-top: 20px; }
+#main_content img { padding: 0; margin: 0; border: none; width: auto; max-width: 100%; }
+
+iframe { max-width: 100%; }
+
+#footer_wrap { background: #00aeef; }
+footer { max-width: 800px; /* text-align: center; */ }
+
+/* Specifics */
+#logo { vertical-align: middle; width: 70px; }
+.aboutpic { float: left; margin: 0 -2px; margin-right: 10px; padding-right: 10px; padding-bottom: 10px; }
+.indented-text { padding-left: 20px; }
+.index_title { font-size: 24px; line-height: 36px; font-weight: 700; }
+.index_descr { font-size: 18px; }
+.club_website_link { font-size: 20px; font-weight: 700; padding: 5px 0; float: left; }
+.all_events { text-align: right; font-size: 20px; font-weight: 700; padding: 5px 0; float: right; }
+.clear { clear: both; }
+
+/* Small Screen Styles */
+@media screen and (max-width: 400px) { #logo, .header-abbr { display: none; } }
