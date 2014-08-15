@@ -1,19 +1,20 @@
 ---
-layout: default
-title: NEST+m Key Club events
+layout: club
+title: Bronx Science Key Club
+website: http://nestmkeyclub.wix.com/home
 ---
 {% assign lim = site.data.upcoming_events.nestm %}
-  {% if lim > 0 %}
-  <h2>Directions to Upcoming Events:</h2>
-  {% for tag in site.tags.nestm reversed limit: lim %}
-  <p><span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
-    {% if tag.time %}<strong>Date: </strong>{{ tag.time }}<br>{% endif %}{% if tag.times %}<strong> Dates: </strong>{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
-    {% if tag.location %}<strong> Location: </strong>{{ tag.location }}{% endif %}{% if tag.locations %}<strong>Locations: </strong>{% for location in tag.locations %}{{ location }}<br>{% endfor %}{% endif %}
-    </span>
-    <hr align="LEFT">
-  </p>
-  {% endfor %}
-  {% else %}
-  <h3>Sorry, there are no upcoming {{ page.title }} with posted directions. Check the <a href="http://nestmkeyclub.wix.com/home">official website</a> for possible upcoming events.</h3>
-  {% endif %}
-  <h3><a href="/nestm/events/">All NEST+m Key Club events</a>
+{% if lim > 0 %}
+{% for tag in site.tags.nestm reversed limit: lim %}
+  <p><span class="index_title"><a href="{{ tag.url }}">{{ tag.title }}</a></span><br>
+  <span class="index_descr">
+  	{% if tag.time %}<strong>Date: </strong>{{ tag.time }}<br>{% endif %}
+   {% if tag.times %}<strong>Dates: </strong>{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
+   {% if tag.location %}<strong>Location: </strong>{{ tag.location }}{% endif %}
+   {% if tag.locations %}<strong>Locations: </strong>{% for location in tag.locations %}{{ location }}<br>{% endfor %}{% endif %}</span>
+  <hr align="LEFT"></p>
+{% endfor %}
+{% else %}
+  <h4>Sorry, there are no upcoming {{ page.title }} with posted directions.</h4>
+  <hr align="LEFT">
+{% endif %}
