@@ -50,6 +50,7 @@ iframe { max-width: 100%; }
 
 #footer_wrap { background: #00aeef; }
 footer { max-width: 800px; /* text-align: center; */ }
+footer a { color: #ffffff; }
 
 /* Specifics */
 #logo { vertical-align: middle; width: 70px; }
