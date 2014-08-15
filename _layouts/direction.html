@@ -1,53 +1,43 @@
 ---
 layout: default
 ---
-    <p>
-    <style>td {border: none;} table {border: none;} img {padding: 0; margin: 0; border: none;}</style>
-        <table>
-            <tbody>
-            <tr>
-                <td colspan="2">{{ page.title }}</td>
-            </tr>
-            <tr>
-                {% if page.time %}
-                <td><strong>Date:</strong></td>
-                <td>{{ page.time }}</td>
-                {% endif %}
-                {% if page.times %}
-                <td><strong>Dates:</strong></td>
-                <td>{% for time in page.times %}{{ time }}<br>{% endfor %}</td>
-                {% endif %}
-            </tr>
-            <tr>
-                {% if page.location %}
-                <td><strong>Location:</strong></td>
-                <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}<br>{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}</td>
-                {% endif %}
-                {% if page.locations %}
-                <td><strong>Locations:</strong></td>
-                <td>{% for loc in page.locations %}{{ loc }}<br>{% endfor %}{% if page.gmap %}<a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}</td>
-                {% endif %}
-            </tr>
-            <tr>    
-            {% if page.nearest-stations %}
-                <td><strong>Nearest Stations:</strong></td>
-                <td>{% for station in page.nearest-stations %}{{ station }}<br>{% endfor %}</td>
-            {% endif %}
-            {% if page.nearest-station %}
-                <td><strong>Nearest Station:</strong></td>
-                <td>{{ page.nearest-station }}</td>
-            {% endif %}
-            </tr>
-            <tr>
-                <td><strong>Service Changes:</strong></td> 
-                <td>{% for change in page.changes-brief %}{{ change }}<br>{% endfor %}</td>
-            </tr>
-            </tbody>
-        </table> 
-        {% if page.changes-ext %} For more details on service changes, click the following link: <a href="{{ page.changes-ext }}">[link]</a>{% endif %}
-        {% if page.changes-custom %}{{ page.changes-custom }}{% endif %}
-    <div align="center">
+<p>
+    <h2>{{ page.title }}</h2>
     
+    {% if page.time %}
+    <h4>Date:</h4><br>
+    {{ page.time }}
+    {% endif %}
+    {% if page.times %}
+    <h4>Dates:</h4>
+    {% for time in page.times %}{{ time }}<br>{% endfor %}
+    {% endif %}
+    
+    {% if page.location %}
+    <h4>Location:</h4>
+    <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}<br>{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}
+    {% endif %}
+    {% if page.locations %}
+    <h4>Locations:</h4>
+    {% for loc in page.locations %}{{ loc }}<br>{% endfor %}{% if page.gmap %}<a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}
+    {% endif %}
+
+    {% if page.nearest-station %}
+    <h4>Nearest Station:</h4>
+    {{ page.nearest-station }}
+    {% endif %}
+    {% if page.nearest-stations %}
+    <h4>Nearest Stations:</h4>
+    {% for station in page.nearest-stations %}{{ station }}<br>{% endfor %}
+    {% endif %}
+    
+    <h4>Service Changes:</h4>
+    <td>{% for change in page.changes-brief %}{{ change }}<br>{% endfor %}
+    
+    {% if page.changes-ext %} For more details on service changes, click the following link: <a href="{{ page.changes-ext }}">[link]</a>{% endif %}
+    {% if page.changes-custom %}{{ page.changes-custom }}{% endif %}
+    
+    <div align="center">
     {% if page.gmap %}<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ page.gmap }}&amp;output=embed"></iframe>{% endif %}
     {% if page.location %}
         {% if page.gmaps %}
@@ -60,5 +50,7 @@ layout: default
         {% endfor %}
     {% endif %}
     {{ content }}
+    </p>
     </div>
+    
     <p>If clarification on anything provided in these directions is necessary or contact with me is otherwise needed, use <a href="/contact">this contact form</a> or feel free to email me at <a href="mailto:tmerritt.transit@nydkc11.org">tmerritt.transit@nydkc11.org</a>.</p>
