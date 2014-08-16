@@ -2,14 +2,26 @@
 layout: default
 title: All Directions
 ---
+<style>table { border: 0; padding: 0; margin: 0; }</style>
 <h3>All Directions:</h3>
 <hr align="LEFT">
 {% for direction in site.posts %}
       <p><span class="index_title"><a href="{{ direction.url }}">{{ direction.title }}</a></span><br>
+      <table><tbody>
       <span class="index_descr">
-  	{% if direction.time %}<strong>Date: </strong>{{ direction.time }}<br>{% endif %}
-      {% if direction.times %}<strong>Dates: </strong>{% for time in direction.times %}{{ time }}<br>{% endfor %}{% endif %}
-      {% if direction.location %}<strong>Location: </strong>{{ direction.location }}{% endif %}
-      {% if direction.locations %}<strong>Locations: </strong>{% for location in direction.locations %}{{ location }}<br>{% endfor %}{% endif %}</span>
-  <hr align="LEFT"></p>
+      <tr>
+  	      {% if direction.time %}<td><strong>Date: </strong></td><td>{{ direction.time }}</td>{% endif %}
+            {% if direction.times %}<td><strong>Dates: </strong></td><td>{% for time in direction.times %}{{ time }}<br>{% endfor %}</td>{% endif %}
+      </tr>
+      </span>
+      </tbody></table>
+      <table><tbody>
+      <span class="index_descr">
+      <tr>
+            {% if direction.location %}<td><strong>Location: </strong></td><td>{{ direction.location }}</td>{% endif %}
+            {% if direction.locations %}<td><strong>Locations: </strong></td><td>{% for location in direction.locations %}{{ location }}<br>{% endfor %}</td>{% endif %}
+      </tr>
+      </span>
+      </tbody></table>
+      <hr align="LEFT"></p>
 {% endfor %}
