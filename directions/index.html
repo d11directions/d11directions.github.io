@@ -1,14 +1,15 @@
 ---
 layout: default
 title: All Directions
-published: true
 ---
-      <hr align="LEFT">
-      {% for direction in site.posts %}
-        <p><span style="font-size: 20px;"><a href="{{ direction.url }}"><strong>{{ direction.title }}</strong></a></span><br>
-        <span style="font-size: 16px;">{% if direction.for %}For {{ direction.for }}<br>{% endif %}
-        {% if direction.time %}<strong>Date: </strong>{{ direction.time }}<br>{% endif %}{% if direction.times %}<strong> Dates: </strong>{% for time in direction.times %}{{ time }}<br>{% endfor %}{% endif %}
-        {% if direction.location %}<strong>Location: </strong>{{ direction.location }}{% endif %}{% if direction.locations %}<strong> Locations: </strong>{% for location in direction.locations %}{{ location }}<br>{% endfor %}{% endif %}
-    </span></p>
-        <hr align="LEFT">
-      {% endfor %}
+<h3>All Directions:</h3>
+<hr align="LEFT">
+{% for direction in site.posts %}
+      <p><span class="index_title"><a href="{{ direction.url }}">{{ direction.title }}</a></span><br>
+      <span class="index_descr">
+  	{% if direction.time %}<strong>Date: </strong>{{ direction.time }}<br>{% endif %}
+      {% if direction.times %}<strong>Dates: </strong>{% for time in direction.times %}{{ time }}<br>{% endfor %}{% endif %}
+      {% if direction.location %}<strong>Location: </strong>{{ direction.location }}{% endif %}
+      {% if direction.locations %}<strong>Locations: </strong>{% for location in direction.locations %}{{ location }}<br>{% endfor %}{% endif %}</span>
+  <hr align="LEFT"></p>
+{% endfor %}
