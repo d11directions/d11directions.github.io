@@ -10,16 +10,16 @@ title: All Directions
       <table><tbody>
       <span class="index_descr">
       <tr>
-  	      {% if direction.time %}<td><strong>Date: </strong></td><td>{{ direction.time }}</td>{% endif %}
-            {% if direction.times %}<td><strong>Dates: </strong></td><td>{% for time in direction.times %}{{ time }}<br>{% endfor %}</td>{% endif %}
+  	      {% if direction.time %}<td class="title-cell"><strong>Date: </strong></td><td>{{ direction.time }}</td>{% endif %}
+            {% if direction.times %}<td class="title-cell"><strong>Dates: </strong></td><td>{% for time in direction.times %}{{ time }}<br>{% endfor %}</td>{% endif %}
       </tr>
       </span>
       </tbody></table>
       <table><tbody>
       <span class="index_descr">
       <tr>
-            {% if direction.location %}<td><strong>Location: </strong></td><td>{{ direction.location }}</td>{% endif %}
-            {% if direction.locations %}<td><strong>Locations: </strong></td><td>{% for location in direction.locations %}{{ location }}<br>{% endfor %}</td>{% endif %}
+            {% if direction.location %}<td class="title-cell"><strong>Location: </strong></td><td>{{ direction.location }}</td>{% endif %}
+            {% if direction.locations %}<td class="title-cell"><strong>Locations: </strong></td><td>{% for location in direction.locations %}{{ location }}<br>{% endfor %}</td>{% endif %}
       </tr>
       </span>
       </tbody></table>
