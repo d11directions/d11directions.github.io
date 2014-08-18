@@ -55,6 +55,7 @@ footer a { color: #ffffff; }
 /* Specifics */
 #logo { vertical-align: middle; width: 70px; }
 .aboutpic { float: left; margin: 0 -2px!important; margin-right: 10px!important; padding-right: 10px!important; padding-bottom: 10px!important; }
+.title-cell { padding-right: 5px; }
 .indented-text { padding-left: 20px; }
 .index_title { font-size: 24px; line-height: 36px; font-weight: 700; }
 .index_descr { font-size: 18px; }
