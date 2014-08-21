@@ -67,4 +67,5 @@ footer a { color: #ffffff; }
 .no_link_color a { color: #231f20; }
 
 /* Small Screen Styles */
-@media screen and (max-width: 400px) { #logo, .header-abbr { display: none; } #footer_left, #footer_right { float: none; text-align: center; } }
+@media screen and (max-width: 600px) { #footer_left, #footer_right { float: none; text-align: center; } }
+@media screen and (max-width: 400px) { #logo, .header-abbr { display: none; } }
