@@ -49,20 +49,22 @@ header { font-family: 'Century Gothic', Verdana, Arial, sans-serif; text-align: 
 iframe { max-width: 100%; }
 
 #footer_wrap { background: #00aeef; }
-footer { max-width: 800px; /* text-align: center; */ }
+footer { max-width: 800px; }
 footer a { color: #ffffff; }
 
 /* Specifics */
 #logo { vertical-align: middle; width: 70px; }
+#footer_left { float: left; text-align: left; }
+#footer_right { float: right; text-align: right; }
 .aboutpic { float: left; margin: 0 -2px!important; margin-right: 10px!important; padding-right: 10px!important; padding-bottom: 10px!important; }
 .title-cell { padding-right: 5px; }
 .indented-text { padding-left: 20px; }
 .index_title { font-size: 24px; line-height: 36px; font-weight: 700; }
 .index_descr { font-size: 18px; }
-.club_website_link { font-size: 20px; font-weight: 700; padding: 5px 0; float: left; }
+.club_website_link { text-align: left; font-size: 20px; font-weight: 700; padding: 5px 0; float: left; }
 .all_events { text-align: right; font-size: 20px; font-weight: 700; padding: 5px 0; float: right; }
 .clear { clear: both; }
 .no_link_color a { color: #231f20; }
 
 /* Small Screen Styles */
-@media screen and (max-width: 400px) { #logo, .header-abbr { display: none; } }
+@media screen and (max-width: 400px) { #logo, .header-abbr { display: none; } #footer_left, #footer_right { float: none; text-align: center; } }
