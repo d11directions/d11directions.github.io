@@ -2,12 +2,24 @@
 layout: default
 title: NEST+m Key Club events
 ---
-  <hr align="LEFT">
-  {% for tag in site.tags.nestm %}
-  <p><span style="font-size: 20px;"><a href="{{ tag.url }}"><strong>{{ tag.title }}</strong></a></span><br>
-    {% if tag.time %}<strong>Date: </strong>{{ tag.time }}<br>{% endif %}{% if tag.times %}<strong> Dates: </strong>{% for time in tag.times %}{{ time }}<br>{% endfor %}{% endif %}
-    {% if tag.location %}<strong> Location: </strong>{{ tag.location }}{% endif %}{% if tag.locations %}<strong>Locations: </strong>{% for location in tag.locations %}{{ location }}<br>{% endfor %}{% endif %}
+<hr align="LEFT">
+{% for tag in site.tags.nestm %}
+  <p><span class="index_title"><a href="{{ tag.url }}">{{ tag.title }}</a></span><br>
+  <table><tbody>
+    <span class="index_descr">
+    <tr>
+  	  {% if tag.time %}<td class="title-cell"><strong>Date: </strong></td><td>{{ tag.time }}</td>{% endif %}
+      {% if tag.times %}<td class="title-cell"><strong>Dates: </strong></td><td>{% for time in tag.times %}{{ time }}<br>{% endfor %}</td>{% endif %}
+    </tr>
     </span>
-    <hr align="LEFT">
-  </p>
-  {% endfor %}
+  </tbody></table>
+  <table><tbody>
+    <span class="index_descr">
+    <tr>
+      {% if tag.location %}<td class="title-cell"><strong>Location: </strong></td><td>{{ tag.location }}</td>{% endif %}
+      {% if tag.locations %}<td class="title-cell"><strong>Locations: </strong></td><td>{% for location in tag.locations %}{{ location }}<br>{% endfor %}</td>{% endif %}
+    </tr>
+    </span>
+  </tbody></table>
+  <hr align="LEFT"></p>
+{% endfor %}
