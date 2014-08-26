@@ -1,0 +1,19 @@
+---
+layout: direction
+title: Rescuing Leftover Cuisine
+for: Bronx Science Key Club
+tags: [bxsci]
+time: Saturday, August 30, 2014 at 4:30 PM
+location: William St &amp; John St, New York, NY 10038
+nearest-station: Fulton St <img src="/img/2.png" alt="(2)"><img src="/img/3.png" alt="(3)"><img src="/img/4.png" alt="(4)"><img src="/img/5.png" alt="(5)"><img src="/img/A.png" alt="(A)"><img src="/img/C.png" alt="(C)">
+changes-brief:
+    - <img src="/img/2.png" alt="(2)"><img src="/img/3.png" alt="(3)"> Trains run local in both directions between 96 St and Times Sq&ndash;42 St.
+    - <img src="/img/5.png" alt="(5)"> No trains between E 180 St and Eastchester&ndash;Dyre Av.
+    - <img src="/img/6.png" alt="(6)"> Brooklyn Bridge-bound trains run express from 14 St&ndash;Union Sq to Brooklyn Bridge&ndash;City Hall.
+    - <img src="/img/6.png" alt="(6)"> Pelham Bay Park-trains run express from Hunts Point Av to Parkchester.
+    - <img src="/img/A.png" alt="(A)"> Ozone Park and Far Rockaway-bound trains run local from 168 St to 59 St&ndash;Columbus Circle.
+    - <img src="/img/D.png" alt="(D)"> Coney Island-bound trains run local from 145 St to 59 St&ndash;Columbus Circle.
+    - <img src="/img/E.png" alt="(E)"> Service runs in two sections&#58;<br>&mdash; Between World Trade Center and Jamaica&ndash;179 St <img src="/img/F.png" alt="(F)">, via the <img src="/img/F.png" alt="(F)"> from Kew Gardens&ndash;Union Tpke.<br>&mdash; Between Jamaica Center/Parsons&ndash;Archer and Kew Gardens&ndash;Union Tpke (the last stop on Manhattan-bound trains is Forest Hills&ndash;71 Av).
+    - <img src="/img/F.png" alt="(F)"> Coney Island-bound trains run via the <img src="/img/M.png" alt="(M)"> from Jackson Heights&ndash;Roosevelt Av to 47&ndash;50 Sts&ndash;Rockefeller Ctr.
+changes-ext: http://travel.mtanyct.info/serviceadvisory/routeStatusResult.aspx?tag=ALL&date=08/30/2014&time=&method=getstatus4
+gmap: https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=William+St+%26+John+St,+New+York,+NY+10038&amp;hl=en&amp;geocode=FUAqbQIdAr2W-ynLZ4_wF1rCiTF4mXSHt8qjvA&amp;sll=40.707512,-74.015105&amp;sspn=0.02814,0.038581&amp;dirflg=r&amp;ttype=arr&amp;date=08%2F30%2F14&amp;time=4:15pm&amp;noexp=0&amp;noal=0&amp;sort=def&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;start=0&amp;ll=40.707512,-74.015105&amp;spn=0.02814,0.038581
