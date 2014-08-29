@@ -10,7 +10,14 @@ title: All Directions
       <table><tbody>
       <span class="index_descr">
       <tr>
-  	      {% if direction.time %}<td class="title-cell"><strong>Date: </strong></td><td>{{ direction.time }}</td>{% endif %}
+            {% if direction.for %}<td class="title-cell"><strong>For: </strong></td><td>{{ direction.for }}</td>{% endif %}
+      </tr>
+      </span>
+      </tbody></table>
+      <table><tbody>
+      <span class="index_descr">
+      <tr>
+            {% if direction.time %}<td class="title-cell"><strong>Date: </strong></td><td>{{ direction.time }}</td>{% endif %}
             {% if direction.times %}<td class="title-cell"><strong>Dates: </strong></td><td>{% for time in direction.times %}{{ time }}<br>{% endfor %}</td>{% endif %}
       </tr>
       </span>
