@@ -64,6 +64,7 @@ footer a { color: #ffffff; }
 #logo { vertical-align: middle; width: 70px; }
 #footer_left { float: left; text-align: left; }
 #footer_right { float: right; text-align: right; }
+.strikethrough { text-decoration: line-through; }
 .aboutpic { float: left; margin: 0 -2px!important; margin-right: 10px!important; padding-right: 10px!important; padding-bottom: 10px!important; }
 .title-cell { padding-right: 5px; }
 .indented-text { padding-left: 20px; }
