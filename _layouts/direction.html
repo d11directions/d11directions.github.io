@@ -28,7 +28,15 @@ layout: default
     {% endif %}
     {% if page.nearest-stations %}
     <h4>Nearest Stations:</h4>
-    {% for station in page.nearest-stations %}{{ station }}<br>{% endfor %}
+    {% for station in page.nearest-stations %}
+    {{ station }}<br>
+    {% endfor %}
+    {% endif %}
+    {% if page.directions %}
+    <h4>Directions:</h4>
+    {% for direction in page.directions %}
+    {{ direction }}<br>
+    {% endfor %}
     {% endif %}
     
     <h4>Service Changes:</h4>
