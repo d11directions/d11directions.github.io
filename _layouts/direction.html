@@ -39,10 +39,10 @@ layout: default
     {% endfor %}
     {% endif %}
     
-    <h4>Service Changes:</h4>
+    <h4>Service Changes: {% if page.changes-ext %}<a href="{{ page.changes-ext }}">[see all changes]</a>{% endif %}
+</h4>
     <td>{% for change in page.changes-brief %}{{ change }}<br><hr align="left">{% endfor %}
     
-    {% if page.changes-ext %} For more details on service changes, click the following link: <a href="{{ page.changes-ext }}">[link]</a>{% endif %}
     {% if page.changes-custom %}{{ page.changes-custom }}{% endif %}
     
     <div align="center">
