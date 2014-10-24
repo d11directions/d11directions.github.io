@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,24 +18,50 @@
     <img id="logo" src="/resources/KeyClubSealBW.png"> D<span class="header-abbr">ivision </span>11 <span class="header-abbr">Transit </span>Directions
   </header>
 </div>
-      
-<div id="nav_wrap">
-    <div id="nav">
-    <ul>
+
+<div class="nav_wrap">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
         <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="/index.html">Home</a></li>
         <li{% if page.url == '/directions/index.html' %} class="active"{% endif %}><a href="/directions">Directions</a></li>
-        <li{% if page.url == '/d11/index.html' %} class="active"{% endif %}><a href="/d11">D11</a></li>
-        <li{% if page.url == '/bxsci/index.html' %} class="active"{% endif %}><a href="/bxsci">BxSci</a></li>
-        <li{% if page.url == '/hsmse/index.html' %} class="active"{% endif %}><a href="/hsmse">HSMSE</a></li>
-        <li{% if page.url == '/hunter/index.html' %} class="active"{% endif %}><a href="/hunter">Hunter</a></li>
-        <li{% if page.url == '/lag/index.html' %} class="active"{% endif %}><a href="/lag">LaGuardia</a></li>
-        <li{% if page.url == '/nestm/index.html' %} class="active"{% endif %}><a href="/nestm">NEST+m</a></li>
-        <li{% if page.url == '/stuy/index.html' %} class="active"{% endif %}><a href="/stuy">Stuy</a></li>
-        <li{% if page.url == '/weekend_info/index.html' %} class="active"{% endif %}><a href="/weekend_info">Weekend Info</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li{% if page.url == '/d11/index.html' %} class="active"{% endif %}><a href="/d11">Division 11</a></li>
+            <li class="divider"></li>
+            <li{% if page.url == '/bxsci/index.html' %} class="active"{% endif %}><a href="/bxsci">Bronx Science</a></li>
+            <li{% if page.url == '/hsmse/index.html' %} class="active"{% endif %}><a href="/hsmse">HSMSE</a></li>
+            <li{% if page.url == '/hunter/index.html' %} class="active"{% endif %}><a href="/hunter">Hunter</a></li>
+            <li{% if page.url == '/lag/index.html' %} class="active"{% endif %}><a href="/lag">LaGuardia</a></li>
+            <li{% if page.url == '/nestm/index.html' %} class="active"{% endif %}><a href="/nestm">NEST+m</a></li>
+            <li{% if page.url == '/stuy/index.html' %} class="active"{% endif %}><a href="/stuy">Stuyvesant</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Changes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li{% if page.url == '/weekend_info/index.html' %} class="active"{% endif %}><a href="/weekend_info">Weekend Changes</a></li>
+            <li{% if page.url == '/long_term/index.html' %} class="active"{% endif %}><a href="/long_term">Long Term Changes</a></li>
+          </ul>
+        </li>
         <li{% if page.url == '/about/index.html' %} class="active"{% endif %}><a href="/about">About</a></li>
         <li{% if page.url == '/contact/index.html' %} class="active"{% endif %}><a href="/contact">Contact</a></li>
-    </ul>
-  </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 </div>
 
 <div id="main_content_wrap" class="outer">
