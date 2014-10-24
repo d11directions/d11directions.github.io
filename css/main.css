@@ -77,6 +77,11 @@ hr { margin: 10px 0px; }
 .clear { clear: both; }
 .no_link_color a { color: #231f20; }
 
+/* Override Bootstrap */
+.navbar-nav>li>a { color: #ffffff; font-size: 24px; }
+
 /* Small Screen Styles */
+@media screen and (max-width: 767px) { .navbar-toggle { border-color: #ffffff; } .icon-bar { background-color: #ffffff; } }
+@media screen and (min-width: 768px) { .navbar-brand { display: none; } }
 @media screen and (max-width: 600px) { #footer_left, #footer_right { float: none; text-align: center; } }
 @media screen and (max-width: 400px) { #logo, .header-abbr { display: none; } }
