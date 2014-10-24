@@ -41,14 +41,6 @@ h6 { font-size: 16px; line-height: 24px; }
 header { font-family: 'Century Gothic', Verdana, Arial, sans-serif; text-align: center; font-size: 48px; font-weight: 700; }
 
 #nav_wrap { background: #00aeef; width: 100%; }
-#nav { display: table; margin: auto; }
-#nav ul { list-style: none; float: left; font-size: 24px; }
-#nav ul a { display: block; padding: 5px 10px; color: #ffffff; text-decoration: none; }
-#nav ul li { float: left; display: inline; height: auto; text-align: center; }
-#nav ul li a:link { text-decoration: none; color: #ffffff; }
-#nav ul li a:hover { background: #00aeef; }
-#nav ul li.active a { color: #231f20; background: #ffffff; }
-#nav ul li.active a:hover { background: #ffffff; }
 
 #main_content_wrap { background: #ffffff; }
 #main_content { max-width: 800px; padding-top: 20px; }
@@ -80,6 +72,13 @@ hr { margin: 10px 0px; }
 /* Override Bootstrap */
 .navbar-default { background: #00aeef; border: 0; display: table; margin: auto; }
 .navbar-nav > li > a { color: #ffffff!important; font-size: 24px; }
+.navbar-default ul { list-style: none; float: left; font-size: 24px; }
+.navbar-default ul a { display: block; padding: 5px 10px; color: #ffffff; text-decoration: none; }
+.navbar-default ul li { float: left; display: inline; height: auto; text-align: center; }
+.navbar-default ul li a:link { text-decoration: none; color: #ffffff; }
+.navbar-default ul li a:hover { background: #00aeef; }
+.navbar-default ul li.active a { color: #231f20; background: #ffffff; }
+.navbar-default ul li.active a:hover { background: #ffffff; }
 
 /* Small Screen Styles */
 @media screen and (max-width: 767px) { .navbar-toggle { border-color: #ffffff; } .icon-bar { background-color: #ffffff; } }
