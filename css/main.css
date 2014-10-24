@@ -76,6 +76,7 @@ hr { margin: 10px 0px; }
 .navbar-nav > a:hover { background: #00aeef!important; }
 .navbar-nav > .active > a { color: #231f20!important; background: #ffffff!important; }
 .navbar-nav > .active > a:hover { background: #ffffff!important; }
+.dropdown-menu > li > a { color: #231f20!important; }
 
 /* Small Screen Styles */
 @media screen and (max-width: 767px) { .navbar-toggle { border-color: #ffffff; } .icon-bar { background-color: #ffffff; } }
