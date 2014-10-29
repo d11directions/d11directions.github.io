@@ -2,6 +2,10 @@
 layout: default
 ---
 <p>
+    {% if page.top-alert %}
+    {{ page.top-alert }}
+    {% endif %}
+    
     <h2>{{ page.title }}</h2>
     
     {% if page.time %}
