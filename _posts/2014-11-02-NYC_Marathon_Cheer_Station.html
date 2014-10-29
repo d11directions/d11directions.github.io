@@ -21,4 +21,72 @@ changes-brief:
 changes-ext: http://travel.mtanyct.info/serviceadvisory/routeStatusResult.aspx?tag=ALL&date=11/02/2014&time=&method=getstatus4
 gmap: https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=E+138th+St&amp;hl=en&amp;geocode=Fc65bgIdGfaX-w&amp;sll=40.810953,-73.927133&amp;sspn=0.001821,0.004128&amp;dirflg=r&amp;ttype=arr&amp;date=11%2F02%2F14&amp;time=10:55am&amp;noexp=0&amp;noal=0&amp;sort=def&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;start=0&amp;ll=40.810953,-73.927133&amp;spn=0.001821,0.004128
 ---
-Test
+<p>
+    {% if page.top-alert %}
+    {{ page.top-alert }}
+    {% endif %}
+    
+    <h2>{{ page.title }}</h2>
+    
+    {% if page.time %}
+    <h4>Date:</h4>
+    {{ page.time }}
+    {% endif %}
+    {% if page.times %}
+    <h4>Dates:</h4>
+    {% for time in page.times %}{{ time }}<br>{% endfor %}
+    {% endif %}
+    
+    {% if page.location %}
+    <h4>Location:</h4>
+    <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}<br>{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}
+    {% endif %}
+    {% if page.locations %}
+    <h4>Locations:</h4>
+    {% for loc in page.locations %}{{ loc }}<br>{% endfor %}{% if page.gmap %}<a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}
+    {% endif %}
+
+    {% if page.nearest-station %}
+    <h4>Nearest Station:</h4>
+    {{ page.nearest-station }}
+    {% endif %}
+    {% if page.nearest-stations %}
+    <h4>Nearest Stations:</h4>
+    {% for station in page.nearest-stations %}
+    {{ station }}<br>
+    {% endfor %}
+    {% endif %}
+    {% if page.directions %}
+    <h4>Directions:</h4>
+    {% for direction in page.directions %}
+    {{ direction }}<br>
+    {% endfor %}
+    {% endif %}
+    
+    <h4>Service Changes: {% if page.changes-ext %}<a href="{{ page.changes-ext }}">[see all changes]</a>{% endif %}</h4>
+
+    {% if page.changes-brief %}
+    <td>{% for change in page.changes-brief %}{{ change }}<br><hr align="left">{% endfor %}
+    {% else %}
+    <td>There are no significant service changes to report at this time.</td>
+    {% endif %}
+    
+    {% if page.changes-custom %}{{ page.changes-custom }}{% endif %}
+    
+    <div align="center">
+    {% if page.gmap %}<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ page.gmap }}&amp;output=embed"></iframe>{% endif %}
+    {% if page.location %}
+        {% if page.gmaps %}
+            {% for gmap in page.gmaps limit: 1 %}<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ gmap.link }}&amp;output=embed"></iframe>{% endfor %}
+        {% endif %}
+    {% endif %}
+    {% if page.locations %}
+        {% for gmap in page.gmaps %}
+        <iframe width="375" height="308" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ gmap.link }}&amp;output=embed"></iframe>
+        {% endfor %}
+    {% endif %}
+    {{ content }}
+    </p>
+    </div>
+    
+    <p>If clarification on anything provided in these directions is necessary or contact with me is otherwise needed, use <a href="/contact">this contact form</a> or feel free to email me at <a href="mailto:tmerritt.transit@nydkc11.org">tmerritt.transit@nydkc11.org</a>.</p>
