@@ -19,11 +19,11 @@ layout: default
     
     {% if page.location %}
     <h4>Location:</h4>
-    <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}<br>{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}
+    <td>{{ page.location }}{% if page.gmap %}<br><a href="{{ page.gmap }}">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}<br>{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}
     {% endif %}
     {% if page.locations %}
     <h4>Locations:</h4>
-    {% for loc in page.locations %}{{ loc }}<br>{% endfor %}{% if page.gmap %}<a href="{{ page.gmap }}" style="color:#0000FF; text-align:left">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}
+    {% for loc in page.locations %}{{ loc }}<br>{% endfor %}{% if page.gmap %}<a href="{{ page.gmap }}">(Click here for directions from Google Maps!)</a>{% endif %}{% if page.gmaps %}{% for gmap in page.gmaps %}<a href="{{ gmap.link }}" style="color:#0000FF; text-align:left">({{ gmap.for %}}: Click here for directions from Google Maps!)</a><br>{% endfor %}{% endif %}
     {% endif %}
 
     {% if page.nearest-station %}
