@@ -71,11 +71,16 @@ hr { margin: 10px 0px; }
 
 /* Override Bootstrap */
 .navbar-default { background: #00aeef; border: 0; display: table; margin: auto; }
-.navbar-nav > li > a { color: #ffffff; font-size: 24px; }
+.navbar-nav > li > a { color: #ffffff!important; font-size: 24px; }
 .navbar-nav > li a:link { text-decoration: none; color: #ffffff; }
-.navbar-nav > a:hover { color: #231f20!important; background: #ffffff!important; }
-.navbar-nav > .active > a, a:hover { color: #231f20!important; font-weight: 700; background: #ffffff!important; }
+
+/*.navbar-nav > a:hover { color: #231f20!important; background: #ffffff!important; }
+.navbar-nav > .active > a, a:hover { color: #231f20!important; font-weight: 700; background: #ffffff!important; }*/
 .dropdown-menu > li > a { color: #231f20!important; }
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus { color: #231f20!important; background: #ffffff!important; }
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus { color: #231f20!important; font-weight: 700; background: #ffffff!important; }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { color: #231f20!important; background: #ffffff!important; }
 
 /* Small Screen Styles */
 @media screen and (max-width: 767px) { .navbar-toggle { border-color: #ffffff; } .icon-bar { background-color: #ffffff; } }
