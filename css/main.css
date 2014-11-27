@@ -71,7 +71,7 @@ hr { margin: 10px 0px; }
 
 /* Override Bootstrap */
 .navbar-default { background: #00aeef; border: 0; display: table; margin: auto; }
-.navbar-nav > li > a { color: #ffffff!important; font-size: 24px; }
+.navbar-nav > li > a { color: #ffffff; font-size: 24px; }
 .navbar-nav > li a:link { text-decoration: none; color: #ffffff; }
 .navbar-nav > a:hover { color: #231f20!important; background: #ffffff!important; }
 .navbar-nav > .active > a, a:hover { color: #231f20!important; font-weight: 700; background: #ffffff!important; }
