@@ -3,7 +3,7 @@ layout: default
 title: All Directions
 ---
 <style>table { border: 0; padding: 0; margin: 0; } h3, .pagination { text-align: center; }</style>
-<h3>All Directions [Page {{ paginator.page }} of {{ paginator.total_pages }}]</h3>
+<h3>All Directions &ndash; Page {{ paginator.page }} of {{ paginator.total_pages }}</h3>
 <hr align="LEFT">
 {% for direction in paginator.posts %}
       <p><span class="index_title"><a href="{{ direction.url }}">{{ direction.title }}</a></span><br>
