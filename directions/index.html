@@ -5,7 +5,7 @@ title: All Directions
 <style>table { border: 0; padding: 0; margin: 0; }</style>
 <h3>All Directions:</h3>
 <hr align="LEFT">
-{% for direction in site.posts %}
+{% for direction in paginator.posts %}
       <p><span class="index_title"><a href="{{ direction.url }}">{{ direction.title }}</a></span><br>
       <table><tbody>
       <span class="index_descr">
@@ -32,3 +32,17 @@ title: All Directions
       </tbody></table>
       <hr align="LEFT"></p>
 {% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next">Next</span>
+  {% endif %}
+</div>
