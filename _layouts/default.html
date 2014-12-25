@@ -11,6 +11,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <script src="/js/jquery-1.11.1.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/snowstorm-min.js"></script>
   <title>{% unless page.url =='/index.html' %}{{ page.title }} | {% endunless %}Division 11 Transit Directions</title>
 </head>
 
@@ -84,6 +85,19 @@
   ga('create', 'UA-48608533-2', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<!-- Snowstorm code -->
+<script>
+  $(document).ready(function() {
+    snowStorm.flakesMax = 96;
+    snowStorm.flakesMaxActive = 72;
+    snowStorm.snowColor = '#bbb';
+    snowStorm.zIndex = '99999';
+    snowStorm.flakeWidth = 16;
+    snowStorm.flakeHeight = 16;
+    snowStorm.maxY = 2.5;
+  });
 </script>
 
 </body>
