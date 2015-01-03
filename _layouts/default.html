@@ -39,7 +39,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="/index.html">Home</a></li>
-        <li{% if page.url == '/directions/index.html' %} class="active"{% endif %}><a href="/directions">Directions</a></li>
+        <li{% if page.url contains '/directions' %} class="active"{% endif %}><a href="/directions">Directions</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
