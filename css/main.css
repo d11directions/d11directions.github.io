@@ -61,7 +61,7 @@ hr { margin: 10px 0px; }
 .strikethrough { text-decoration: line-through; }
 .aboutpic { float: left; margin: 0 -2px!important; margin-right: 10px!important; padding-right: 10px!important; padding-bottom: 10px!important; }
 .title-cell { padding-right: 5px; }
-.indented-text { padding-left: 20px; }
+.indented-text { padding-left: 20px; display: inline-block; }
 .index_title { font-size: 24px; line-height: 36px; font-weight: 700; }
 .index_descr { font-size: 18px; }
 .club_website_link { text-align: left; font-size: 20px; font-weight: 700; padding: 5px 0; float: left; }
