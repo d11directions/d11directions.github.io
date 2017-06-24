@@ -8,7 +8,7 @@ This site uses the following:
 + [jQuery v1.11.1](http://jquery.com/)
 
 ## History ##
-This website (in its original incarnation) was created by Terrell Frederick Merritt
+This website (in its original incarnation) was created by Terrell F. Merritt
 in February 2014 in order to address the lack of attendance at events by members of
 his chapter of Key Club International due to not understanding how to utilize
 public transportation to get there. Mixing his vast knowledge of the New York City
@@ -24,4 +24,4 @@ more than a half-year after Terrell became an alumni of Key Club International a
 began his collegiate studies.
 
 ## Contact ##
-Creator Terrell Merritt can be reached via email at <terrellfmerritt@gmail.com>.
+Creator Terrell F. Merritt can be reached via email at <tfm@terlmi.us>.

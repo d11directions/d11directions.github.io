@@ -9,14 +9,14 @@
 {% for page in site.pages %}
     {% unless page.url contains 'sitemap.xml' or page.url contains '404' %}
 <url>
-  <loc>http://directions.nydkc11.org{{ page.url | remove:'index.html' }}</loc>
+  <loc>http://directions.terrellfmerritt.com{{ page.url | remove:'index.html' }}</loc>
   <changefreq>daily</changefreq>
 </url>
     {% endunless %}
 {% endfor %}
 {% for direction in site.posts %}
 <url>
-  <loc>http://directions.nydkc11.org{{ direction.url }}/</loc>
+  <loc>http://directions.terrellfmerritt.com{{ direction.url }}/</loc>
   <changefreq>daily</changefreq>
 </url>
 {% endfor %}
